@@ -1,8 +1,17 @@
 /*
 Color pallette:
     #3b3b3b - Gray
-    #ffcc57 - Yellow
+    var(--mainColor) - Yellow
 */
+
+
+:root {
+    --Gray: #3b3b3b;
+    --mainColor: #777777;
+    --mainColor50: #77777750;
+    --mainColor33: #77777733;
+    --mainColoraa: #777777aa;
+  }
 
 *{
     font-family: Arial, Helvetica, sans-serif;
@@ -17,7 +26,7 @@ Color pallette:
     margin-top: 50px;
     animation-name: titleanim;
     animation-duration: 2s;
-    background-color: #ffcc5750;
+    background-color: var(--mainColor50);
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 50px;
@@ -54,7 +63,7 @@ Color pallette:
 
 
 body{
-    background-color: #ffcc5750;
+    background-color: var(--mainColor50);
 }
 h1{
 
@@ -107,7 +116,7 @@ li{
 }
 
 textarea{
-    background-color: #ffcc5750;
+    background-color: var(--mainColor50);
     border-radius: 10px;
 }
 
@@ -131,8 +140,8 @@ textarea{
 .text-input{
     height: 200px;
     width: 40%;
-    background-color: #ffcc5750;
-    border-color: #ffCC57;
+    background-color: var(--mainColor50);
+    border-color: var(--mainColor);
     margin-bottom: 10px;
     border-radius: 10px;
 }
@@ -142,8 +151,8 @@ textarea{
 }
 
 .email-input{
-    background-color: #ffcc5750;
-    border-color: #ffCC57;
+    background-color: var(--mainColor50);
+    border-color: var(--mainColor);
     margin-bottom: 10px;
     border-radius: 10px;
 }
@@ -153,8 +162,8 @@ textarea{
 }
 
 .submit-button{
-    background-color: #ffcc5750;
-    border-color: #ffCC57;
+    background-color: var(--mainColor50);
+    border-color: var(--mainColor);
     margin-bottom: 10px;
     border-radius: 10px;
 }
@@ -166,7 +175,7 @@ textarea{
     align-content: space-evenly;
     grid-template-columns: auto auto auto auto;
     gap: 10px;
-    background-color: #ffcc57aa;
+    background-color: var(--mainColoraa);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 40px;
@@ -180,7 +189,7 @@ textarea{
     animation-name: divnavgridanim;
     animation-duration: 3s;
     border-radius: 20px;
-    background-color: #ffcc5750;
+    background-color: var(--mainColor50);
     text-align: center;
     padding: 10px 20px;
     font-size: 30px;
@@ -207,7 +216,7 @@ textarea{
 
 
 .nav-grid > div:hover{
-    background-color: #ffcc57;
+    background-color: var(--mainColor);
     letter-spacing: 10px;
   }
 
@@ -223,7 +232,7 @@ textarea{
 }
 
 .title > h1:hover{
-    letter-spacing: 20px;
+    letter-spacing: 5px;
 }
 
 .main{
@@ -262,12 +271,12 @@ textarea{
 .home-grid-sub{
     padding: 25px;
     border-radius: 10px;
-    background-color: #ffcc5733;
+    background-color: var(--mainColor33);
     transition: 1s;
 }
 
 .home-grid-sub:hover{
-    background-color: #ffcc57aa;
+    background-color: var(--mainColoraa);
     scale: 110%;
 }
 
@@ -290,7 +299,7 @@ textarea{
 .home-shop-sub{
     padding: 25px;
     border-radius: 10px;
-    background-color: #ffcc5733;
+    background-color: var(--mainColor33);
     transition: 0.5s;
 }
 
@@ -299,13 +308,13 @@ textarea{
 }
 
 .home-shop-sub:hover{
-    background-color: #ffcc57aa;
+    background-color: var(--mainColoraa);
     scale: 110%;
     letter-spacing: 5px;
 }
 
 footer{
-    background-color: #ffcc57; 
+    background-color: var(--mainColor); 
     margin-bottom: -8px;   
     margin-left: -8px;
     margin-right: -8px;
