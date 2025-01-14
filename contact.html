@@ -1,36 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Vanguard Brotherhood</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Contact Vanguard Brotherhood</h1>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="join.html">Join</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
-    <div class="container">
-        <h2>Get in Touch</h2>
-        <p>Have questions? Reach out to us using the form below.</p>
-        <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea><br><br>
-            <input type="submit" value="Send Message">
-        </form>
-    </div>
-    <footer>
-        <p>&copy; 2024 Vanguard Brotherhood</p>
-    </footer>
-</body>
+<html>
+
+    <head>
+
+        <title>
+            CheatSheet Solutions - Contact
+        </title>
+
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <meta charset="UTF-8">
+
+    </head>
+
+    <body>
+
+        <div class="nav-grid">
+            <div><a class="nav-link" href="index.html">Home</a></div>
+            <div><a class="nav-link" href="shop.html">Shop</a></div>
+            <div><a class="nav-link" href="about.html">About</a></div>
+            <div><a class="nav-link" href="contact.html">Contact</a></div>
+        </div>
+        <div class="title">
+            <h1>
+                Contact.
+            </h1>
+            <h2>
+                You have questions, we have answers.
+            </h2>
+        </div>
+        <div class="main">
+            <h2>
+                Got a question about our cheat sheets? Want to ask about our services? Contact us with using the informmation below:
+            </h2>
+
+			<form action="https://formspree.io/f/mgveveyq" method="POST">
+				<label>                
+					<h2 class="align-left">
+						Your email:<br>
+						<input type="email" name="email" class="email-input" width="500px" height="50px">
+					</h2>
+				</label>
+
+                <label>                
+					<h2 class="align-left">
+						Your name:<br>
+						<input type="text" name="name" class="email-input" width="500px" height="50px">
+					</h2>
+				</label>
+
+				<br>
+				
+				<label>
+					<h2 class="align-left">
+                        Your message:
+                        <br>
+                        <textarea name="message" class="text-input" width="90%" height="auto"></textarea>
+                        <br>
+					</h2>
+				</label>
+				<br>
+
+    		    <button type="submit" class="submit-button"><h2>Send</h2></button>
+			</form>
+
+            <h3>
+                Phone: 089 447 5582
+            </h3>
+            <h3>
+                Email: <a href="mailto:CCBGuns@proton.me" style="text-decoration: none;">CBBGuns@proton.me</a>
+            </h3>
+        </div>
+
+    </body>
+
 </html>
